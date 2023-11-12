@@ -16,7 +16,7 @@ const createCareerZodSchema = z.object({
   }),
 });
 
-// const updateOurServiceZodSchema = z.object({
+// const updateCareerZodSchema = z.object({
 //   body: z.object({
 //     title: z.string().min(5).optional(),
 //     description: z.string().optional(),
@@ -27,5 +27,5 @@ const createCareerZodSchema = z.object({
 
 export const CareerValidation = {
   createCareerZodSchema,
-  //   updateOurServiceZodSchema,
+  //   updateCareerZodSchema,
 };

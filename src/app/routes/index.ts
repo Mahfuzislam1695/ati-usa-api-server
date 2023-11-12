@@ -1,6 +1,7 @@
 import express from 'express';
 import { careerRoutes } from '../modules/career/career.route';
 import { ourServiceRoutes } from '../modules/service/ourService.route';
+import { tecTalentsRoutes } from '../modules/technicalTalents/tecTalents.route';
 
 const router = express.Router();
 
@@ -12,6 +13,10 @@ const moduleRoutes = [
   {
     path: '/career',
     route: careerRoutes,
+  },
+  {
+    path: '/tecTalents',
+    route: tecTalentsRoutes,
   },
 ];
 
