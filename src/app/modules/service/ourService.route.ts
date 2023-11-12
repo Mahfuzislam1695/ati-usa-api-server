@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.post(
   '/create-our-service',
-  validateRequest(OurServiceValidation.updateOurServiceZodSchema),
+  validateRequest(OurServiceValidation.createOurServiceZodSchema),
   ourServiceController.createOurService
 );
 
